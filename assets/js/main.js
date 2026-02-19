@@ -216,9 +216,12 @@
   }
 
   function setupCurrentNav() {
-    var path = window.location.pathname.split('/').pop() || 'index.html';
+    var path = window.location.pathname || '/';
+    if (!path.endsWith('/')) path = path + '/';
     document.querySelectorAll('[data-nav]').forEach(function (link) {
-      if (link.getAttribute('href') === path) {
+      var href = link.getAttribute('href') || '';
+      if (!href.endsWith('/')) href = href + '/';
+      if (href === path) {
         link.setAttribute('aria-current', 'page');
       }
     });
