@@ -480,14 +480,19 @@ summary:focus-visible {
 }
 
 .icon-dot {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: 999px;
   display: grid;
   place-items: center;
-  color: var(--brand-900);
+  flex-shrink: 0;
+  color: var(--brand-700);
   background: var(--surface-soft);
   font-size: 0.88rem;
+}
+
+.icon-dot svg {
+  display: block;
 }
 
 .dark-panel {
