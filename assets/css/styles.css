@@ -334,34 +334,31 @@ summary:focus-visible {
 .media-photo {
   border-radius: calc(var(--radius-xl) - 7px);
   min-height: 100%;
-  background:
-    linear-gradient(180deg, rgba(11, 60, 45, 0.06), rgba(11, 60, 45, 0.28)),
-    linear-gradient(120deg, #92cdae, #235f48);
+  background: #0b3c2d;
   position: relative;
   overflow: hidden;
 }
 
-.media-photo::before,
-.media-photo::after {
-  content: '';
+.media-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   position: absolute;
-  border-radius: 999px;
+  inset: 0;
+  display: block;
 }
 
 .media-photo::before {
-  width: 320px;
-  height: 320px;
-  right: -60px;
-  top: -80px;
-  background: rgba(255, 255, 255, 0.2);
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11, 60, 45, 0.05), rgba(11, 60, 45, 0.28));
+  z-index: 1;
+  pointer-events: none;
 }
 
 .media-photo::after {
-  width: 240px;
-  height: 240px;
-  left: -80px;
-  bottom: -90px;
-  background: rgba(255, 255, 255, 0.15);
+  content: none;
 }
 
 .badge {
@@ -518,7 +515,7 @@ summary:focus-visible {
 }
 
 .checklist li::before {
-  content: 'OK';
+  content: '✓';
   position: absolute;
   left: 0;
   top: 0;
