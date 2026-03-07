@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 560" role="img" aria-labelledby="title desc">
+  <title id="title">Green Guard Pest Control Logo Mark</title>
+  <desc id="desc">Shield outline containing a pest silhouette and a leaf, in dark and light green.</desc>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <defs>
+    <clipPath id="shield-inner-clip">
+      <path d="M256 44L449 126V283C449 378 392 451 256 510C120 451 63 378 63 283V126L256 44Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Shield -->
+  <path
+    fill="#0f5b40"
+    d="M256 16L476 110V286C476 392 413 477 256 544C99 477 36 392 36 286V110L256 16Z"
+  />
+  <path
+    fill="#f7f5ef"
+    d="M256 44L449 126V283C449 378 392 451 256 510C120 451 63 378 63 283V126L256 44Z"
+  />
+
+  <!-- Interior artwork clipped to inner shield -->
+  <g clip-path="url(#shield-inner-clip)">
+    <!-- Pest silhouette -->
+    <g fill="#0f5b40" stroke="#0f5b40" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="238" cy="153" r="36"/>
+      <path d="M176 210C176 176 202 156 238 156H250C293 156 322 191 322 239V283C322 331 305 378 272 420L252 448L230 409L201 416C179 380 164 338 164 289V235C164 226 168 217 176 210Z"/>
+
+      <!-- Antennae -->
+      <path d="M219 126C209 110 195 100 180 94" fill="none" stroke-width="10"/>
+      <path d="M257 126C266 110 281 100 296 94" fill="none" stroke-width="10"/>
+
+      <!-- Legs -->
+      <path d="M172 220L131 191L123 170" fill="none" stroke-width="12"/>
+      <path d="M168 268L124 268L111 285" fill="none" stroke-width="12"/>
+      <path d="M174 322L134 351L131 381" fill="none" stroke-width="12"/>
+      <path d="M316 220L356 194L365 175" fill="none" stroke-width="12"/>
+      <path d="M315 268L358 268L373 285" fill="none" stroke-width="12"/>
+      <path d="M308 320L347 347L352 374" fill="none" stroke-width="12"/>
+    </g>
+
+    <!-- Leaf shape -->
+    <path
+      fill="#3f8f46"
+      d="M246 486C228 397 256 270 391 206C427 319 416 427 331 485C304 503 270 506 246 486Z"
+    />
+
+    <!-- White separator between bug and leaf -->
+    <path
+      d="M239 494C243 408 288 310 386 240"
+      fill="none"
+      stroke="#f7f5ef"
+      stroke-width="26"
+      stroke-linecap="round"
+    />
+
+    <!-- Leaf vein -->
+    <path
+      d="M286 472C302 409 340 334 392 274"
+      fill="none"
+      stroke="#f7f5ef"
+      stroke-width="10"
+      stroke-linecap="round"
+    />
+  </g>
+</svg>
